@@ -9,9 +9,11 @@
             <div>这是一个java开源框架,提供登录，注册的脚手架</div>
         </div>
         <div style="width: 400px;background: white;text-align: center;z-index: 1">
-            <transition name="el-fade-in-linear">
-                <router-view/>
-            </transition>
+            <router-view v-slot="{ Component }">
+                <transition name="el-fade-in-linear">
+                    <component :is="Component"/>
+                </transition>
+            </router-view>
         </div>
     </div>
 </template>

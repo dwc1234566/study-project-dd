@@ -55,7 +55,7 @@
 
         <div style="margin-top: 20px">
             <span style="font-size: 14px;line-height: 15px;color: gray">已有帐号?</span>
-             <el-link type="primary" style="translate: 0 -2px" @click="router().push('/')" >立即登录</el-link>
+             <el-link type="primary" style="translate: 0 -2px" @click="router.push('/')" >立即登录</el-link>
         </div>
 
     </div>
